@@ -1,0 +1,172 @@
+.speakerTicket-popup .p-float-label label {
+  font-size: 16px;
+}
+
+.speakerTicket-popup {
+  transition: 0.5s;
+  max-height: 600px;
+  scrollbar-width: none;
+  box-shadow: 0px 0px 10px #666;
+  z-index: 100440;
+  width: 70%;
+}
+.speakerTicket-popup .p-datepicker {
+  border: none;
+}
+.speakerTicket-popup .p-selectbutton .p-button.p-highlight {
+  background-color: rgba(39, 174, 96, 0.1);
+  border-color: rgba(39, 174, 96, 0.1);
+  color: rgba(39, 174, 96, 1);
+}
+.speakerTicket-popup .p-datepicker-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: rgba(107, 122, 133, 1);
+}
+.speakerTicket-popup .p-datepicker table td.p-datepicker-today > span {
+  background-color: #d1d5db5d;
+  font-weight: 500;
+}
+.speakerTicket-popup .p-button:focus {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px rgba(39, 174, 95, 0.4),
+    0 1px 2px 0 rgb(0, 0, 0);
+}
+.speakerTicket-popup .p-button.delete-question-icon:focus {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #f7a2a2, 0 1px 2px 0 rgb(0, 0, 0);
+}
+
+.p-datepicker .p-datepicker-header {
+  border: none;
+  margin-bottom: 5px;
+}
+.custom-calendar .p-datepicker table th > span {
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-calendar td > span {
+  border-radius: 0%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+/* To move the arrows to the end */
+.custom-calendar .p-datepicker-prev,
+.custom-calendar .p-datepicker-next {
+  order: 1;
+  font-size: calc(1.3rem + 0.6vw);
+}
+.custom-calendar .p-datepicker-prev {
+  margin-left: auto;
+}
+.custom-calendar .p-datepicker-month,
+.custom-calendar .p-datepicker-year {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 0.5rem;
+  color: rgba(107, 122, 133, 1);
+}
+
+.p-datepicker .p-monthpicker-month,
+.p-datepicker .p-yearpicker-year,
+.p-datepicker .p-datepicker-decade {
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+.question-container-box {
+  padding: 15px 25px 0px 25px;
+  border-left: 2px solid rgba(242, 242, 242, 1);
+  align-self: flex-start;
+}
+.question-container-box textarea:focus {
+  margin-top: 12px;
+}
+.questions-data {
+  padding: 15px 25px;
+  align-self: flex-start;
+}
+.questions-answers-tabs .p-tabmenu-nav.p-reset {
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.questions-answers-tabs .p-tabmenu-nav.p-reset .p-tabmenuitem a {
+  padding: 12px 10px;
+  font-size: 16px;
+  color: #a5a5a5;
+}
+.questions-answers-tabs .p-tabmenu-nav.p-reset .p-tabmenuitem.p-highlight a {
+  border-color: black;
+  color: black;
+}
+.p-inputgroup-addon .p-button.paragraph-component {
+  border-radius: 0 !important;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+.ar .p-inputgroup-addon .p-button.paragraph-component {
+  border-radius: 0 !important;
+  border-top-left-radius: 5px !important;
+  border-bottom-left-radius: 5px !important;
+}
+.p-togglebutton.paragraph-component .p-button-label {
+  padding: 0.45rem 0.9375rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.p-togglebutton:not(.p-disabled):has(.p-togglebutton-input:hover).p-highlight
+  .p-button {
+  background: rgba(39, 174, 96, 1);
+  border-color: rgba(39, 174, 96, 1);
+  color: #ffffff;
+}
+
+.p-togglebutton.p-highlight .p-button {
+  color: #ffffff;
+  background: #22c55e;
+  border: 1px solid #22c55e;
+}
+
+@media screen and (max-width: 770px) {
+  .speakerTicket-popup {
+    width: 100%;
+  }
+  .speakerTicket-popup .speakerTicket-data,
+  .speakerTicket-popup .calendar,
+  .speakerTicket-popup .speakerTicket-inputTexts {
+    width: 90% !important;
+  }
+  .speakerTicket-popup .speakerTicket-inputTexts input {
+    width: 100% !important;
+  }
+  .question-container-box {
+    border-left: none;
+    border-top: 2px solid rgba(242, 242, 242, 1);
+    padding: 5px 15px;
+    margin-top: 20px;
+  }
+  .questions-data {
+    padding: 5px 15px;
+  }
+}
+
+div.p-toast {
+  z-index: 100000 !important;
+}
